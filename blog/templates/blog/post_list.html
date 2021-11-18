@@ -23,22 +23,30 @@
                 in a fast-paced environment. Also, I love to meet new people, so feel free to connect with me.</p>
         </div>
 
-        <div>
-            <p>published: 17.11.2021, 12:14</p>
-            <h2><a href="">My Resume</a></h2>
-            <p>When you click, my <u>Resume</u> in pdf format will open on the next page.</p>
-        </div>
+<!--        <div>-->
+<!--            <p>published: 17.11.2021, 12:14</p>-->
+<!--            <h2><a href="">My Resume</a></h2>-->
+<!--            <p>When you click, my <u>Resume</u> in pdf format will open on the next page.</p>-->
+<!--        </div>-->
 
-        <div>
-            <p>published: 17.11.2021, 12:14</p>
-            <h2><a href="">My Projects</a></h2>
-            <p>When you click, my <u>Projects</u> will open on the next page.</p>
-        </div>
+<!--        <div>-->
+<!--            <p>published: 17.11.2021, 12:14</p>-->
+<!--            <h2><a href="">My Projects</a></h2>-->
+<!--            <p>When you click, my <u>Projects</u> will open on the next page.</p>-->
+<!--        </div>-->
 
-        <div>
-            <p>published: 17.11.2021, 12:14</p>
-            <h2><a href="">GitHub</a></h2>
-            <p>When you click, my <u>GitHub</u> will open on the next page.</p>
-        </div>
+<!--        <div>-->
+<!--            <p>published: 17.11.2021, 12:14</p>-->
+<!--            <h2><a href="">GitHub</a></h2>-->
+<!--            <p>When you click, my <u>GitHub</u> will open on the next page.</p>-->
+<!--        </div>-->
+
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaks }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
