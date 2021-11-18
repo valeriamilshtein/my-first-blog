@@ -10,7 +10,7 @@
         <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div>
+        <div class="page-header">
             <h1><a href="/">My Blog</a></h1>
         </div>
 
@@ -19,7 +19,7 @@
         <p>I'm currently seeking full-time <u>Software Development Job</u>.</p>
 
         {% for post in posts %}
-            <div>
+            <div class="post">
                 <br>
                 <p>published: {{ post.published_date }}</p>
                 <h2><u><a href="">{{ post.title }}</a></u></h2>
@@ -27,6 +27,22 @@
             </div>
         {% endfor %}
 
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% for post in posts %}
+                        <div class="post">
+                            <br>
+                            <div class="date">
+                                {{ post.published_date }}
+                            </div>
+                            <h2><u><a href="">{{ post.title }}</a></u></h2>
+                            <p>{{ post.text|linebreaks }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
 <!--        <div>-->
 <!--            <h1><a href="">About Me</a></h1>-->
 <!--            <p>I am a hard worker and a fast learner.-->
