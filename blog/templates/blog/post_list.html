@@ -3,9 +3,21 @@
         <title>Valeria Milshtein Portfolio</title>
     </head>
     <body>
-<!--        <h1><strong>Hello,<br>I'm Valeria Milshtein!</strong></h1>-->
-<!--        <h2>I'm a recent graduate at <i>Humber College</i><br>studying Computer Programmer.</h2>-->
-<!--        <p>I'm currently seeking full-time <u>Software Development Job</u>.</p>-->
+        <div>
+            <h1><a href="/">My Blog</a></h1>
+        </div>
+
+        <h1><strong>Hello,<br>I'm Valeria Milshtein!</strong></h1>
+        <h2>I'm a recent graduate at <i>Humber College</i><br>studying Computer Programmer.</h2>
+        <p>I'm currently seeking full-time <u>Software Development Job</u>.</p>
+
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaks }}</p>
+            </div>
+        {% endfor %}
 
 <!--        <div>-->
 <!--            <h1><a href="">About Me</a></h1>-->
@@ -40,17 +52,5 @@
 <!--            <h2><a href="">GitHub</a></h2>-->
 <!--            <p>When you click, my <u>GitHub</u> will open on the next page.</p>-->
 <!--        </div>-->
-
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
-
-        {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaks }}</p>
-            </div>
-        {% endfor %}
     </body>
 </html>
