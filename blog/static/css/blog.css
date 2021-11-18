@@ -1,9 +1,10 @@
 h1 a {
     color: #356B6A;
+    font-family: 'Lobster';
 }
 body {
     background: #EDF5F5;
-    font-family: 'Lobster', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-left: 100px;
     margin: 8px;
 }
