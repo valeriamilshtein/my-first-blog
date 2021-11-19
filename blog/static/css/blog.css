@@ -6,7 +6,7 @@ h1 a, h2 a {
 body {
     background: #EDF5F5;
     font-family: 'Open Sans', sans-serif;
-
+    padding-left: 100px;
     margin: 8px;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .content {
-    margin-left: 40px;
+
 }
 
 h1, h2, h3, h4 {
