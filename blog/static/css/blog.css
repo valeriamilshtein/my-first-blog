@@ -1,6 +1,6 @@
 h1 a, h2 a {
     color: #356B6A;
-    font-family: 'Cinzel';
+    font-family: 'Lobster';
 }
 
 body {
@@ -30,7 +30,7 @@ h1 {
     font-family: 'Cinzel';
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
 
