@@ -1,11 +1,11 @@
 h1 a, h2 a {
     color: #356B6A;
-
+    font-family: 'Lobster';
 }
 
 body {
     background: #EDF5F5;
-
+    font-family: 'Open Sans', sans-serif;
     padding-left: 100px;
     margin: 8px;
 }
@@ -26,9 +26,7 @@ body {
     margin-left: 0px;
 }
 
-h1, h2, h3, h4 {
 
-}
 
 .date {
     float: right;
