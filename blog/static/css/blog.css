@@ -27,17 +27,19 @@ body {
 }
 
 #intro {
-    font-family: "Courier";
-    font-size: 20px;
-    margin: 10px 0 0 10px;
-    white-space: nowrap;
+    display: inline-block;
     overflow: hidden;
-    width: 30em;
-    animation: type 4s steps(60, end);
+    white-space: nowrap;
+    animation: example 2s linear 0s infinite alternate;
 }
 
-@keyframes type {
-    from { width: 0; }
+@keyframes example {
+    from {
+        width: 0;
+    }
+    to {
+        width: 150px;
+    }
 }
 
 h1, h2, h3, h4 {
