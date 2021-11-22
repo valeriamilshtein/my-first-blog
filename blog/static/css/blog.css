@@ -26,7 +26,7 @@ body {
     margin-left: 0px;
 }
 
-#intro {
+.intro {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
