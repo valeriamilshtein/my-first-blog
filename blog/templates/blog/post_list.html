@@ -8,14 +8,36 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 <!--        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
+        <style type="text/css">
+	        p {
+                color: yellow;
+                font-family: "Arial";
+                font-size: 30px;
+                margin: 10px 0 0 10px;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 30em;
+                animation: type 8s steps(60, end);
+            }
+
+            .wrapper {
+                background-color: black;
+            }
+
+            @keyframes type {
+                from {
+                    width: 0;
+                }
+            }
+        </style>
     </head>
     <body>
         <div class="page-header">
             <h1><a href="/">My Blog</a></h1>
         </div>
 
-        <div class="typewriter">
-            <div class="typewriter-text">Hello, I'm Valeria Milshtein!</div>
+        <div class="wrapper">
+            <p>Hello, I'm Valeria Milshtein!</p>
         </div>
 
         <h1><strong>Hello,<br>I'm Valeria Milshtein!</strong></h1>
