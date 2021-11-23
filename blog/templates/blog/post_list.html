@@ -48,7 +48,10 @@
                 width: 11.5em;
                 opacity: 0;
                 -webkit-animation: type2 2s steps(40, end);
-                animation: type2 2s steps(40, end);
+<!--                animation: type2 2s steps(40, end);-->
+                animation:
+                    typing 2s steps(20, end) forwards,
+                    blinking .75s infinite;
                 -webkit-animation-delay: 2s;
                 animation-delay: 2s;
                 -webkit-animation-fill-mode: forwards;
@@ -82,12 +85,22 @@
                     border: none;
                 }
             }
-            @keyframes blink {
-                50% {border-color: transparent;}
+<!--            @keyframes blink {-->
+<!--                50% {border-color: transparent;}-->
+<!--            }-->
+            @keyframes blinking {
+                from { border-color: transparent }
+                to { border-color: black; }
             }
             @-webkit-keyframes blink {
                 50% {border-color: tranparent;}
             }
+
+             @keyframes typing {
+                from { width: 0 }
+                to { width: 100%; }
+            }
+
         </style>
     </head>
     <body>
