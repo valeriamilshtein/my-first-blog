@@ -67,14 +67,14 @@
 <!--                50% {border-color: tranparent;}-->
 <!--            }-->
 
-            .css-typing p {
-  border-right: .15em solid orange;
+            .css-typing h1 {
+  border-right: .15em solid green;
   font-family: "Courier";
   font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
 }
-.css-typing p:nth-child(1) {
+.css-typing h1:nth-child(1) {
   width: 7.3em;
   -webkit-animation: type 2s steps(40, end);
   animation: type 2s steps(40, end);
@@ -82,7 +82,7 @@
   animation-fill-mode: forwards;
 }
 
-.css-typing p:nth-child(2) {
+.css-typing h1:nth-child(2) {
   width: 11.5em;
   opacity: 0;
   -webkit-animation: type2 2s steps(40, end);
@@ -93,7 +93,7 @@
   animation-fill-mode: forwards;
 }
 
-.css-typing p:nth-child(3) {
+.css-typing h1:nth-child(3) {
   width: 7.3em;
   opacity: 0;
   -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
@@ -109,7 +109,7 @@
     width: 0;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid green;
   }
   100% {
     border: none;
@@ -121,12 +121,44 @@
     width: 0;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid green;
   }
   100% {
     border: none;
   }
 }
+
+<!--@keyframes type2 {-->
+<!--  0% {-->
+<!--    width: 0;-->
+<!--  }-->
+<!--  1% {-->
+<!--    opacity: 1;-->
+<!--  }-->
+<!--  99.9% {-->
+<!--    border-right: .15em solid green;-->
+<!--  }-->
+<!--  100% {-->
+<!--    opacity: 1;-->
+<!--    border: none;-->
+<!--  }-->
+<!--}-->
+
+<!--@-webkit-keyframes type2 {-->
+<!--  0% {-->
+<!--    width: 0;-->
+<!--  }-->
+<!--  1% {-->
+<!--    opacity: 1;-->
+<!--  }-->
+<!--  99.9% {-->
+<!--    border-right: .15em solid green;-->
+<!--  }-->
+<!--  100% {-->
+<!--    opacity: 1;-->
+<!--    border: none;-->
+<!--  }-->
+<!--}-->
 
 @keyframes type2 {
   0% {
@@ -135,44 +167,12 @@
   1% {
     opacity: 1;
   }
-  99.9% {
-    border-right: .15em solid orange;
-  }
   100% {
     opacity: 1;
-    border: none;
   }
 }
 
 @-webkit-keyframes type2 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  99.9% {
-    border-right: .15em solid orange;
-  }
-  100% {
-    opacity: 1;
-    border: none;
-  }
-}
-
-@keyframes type3 {
-  0% {
-    width: 0;
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes type3 {
   0% {
     width: 0;
   }
@@ -211,15 +211,15 @@
 <!--        </div>-->
 
         <div class="css-typing">
-            <p>
+            <h1>
                 <strong>Hello,</strong>
-            </p>
-            <p>
+            </h1>
+            <h1>
                 <strong>I'm Valeria Milshtein!</strong>
-            </p>
-            <p>
-                <strong>Typed text 3</strong>
-            </p>
+            </h1>
+<!--            <h1>-->
+<!--                <strong>Typed text 3</strong>-->
+<!--            </h1>-->
         </div>
 
         <h2>I had graduated from Humber College<br>Studied Computer Programmer</h2>
