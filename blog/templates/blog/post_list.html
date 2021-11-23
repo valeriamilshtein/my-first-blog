@@ -8,6 +8,24 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 <!--        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
+        <style id="imanoistop">
+            element.style {
+                display: inline;
+                position: relative;
+                font: inherit;
+                color: inherit;
+            }
+
+            @keyframes blink-imanoistoup {
+                0% {opacity: 0}
+                49% {opacity: 0}
+                50% {opacity: 1}
+            }
+
+            [data-inline-type='imanoistoup'] .ti-cursor {
+                animation: blink-imanoistoup 1s infinite;
+            }
+        </style>
     </head>
     <body>
         <div class="page-header">
