@@ -26,6 +26,20 @@ body {
     margin-left: 0px;
 }
 
+h1 {
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 8s steps(60, end);
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
 h1, h2, h3, h4 {
     font-family: 'Lobster';
 }
