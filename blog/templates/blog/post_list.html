@@ -32,66 +32,63 @@
 <!--            }-->
 
 
-            @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
-<!--            .wrapper {-->
-<!--                margin-top: 5%;-->
-<!--                width: 100%;-->
-<!--                height: 100%;-->
-<!--            }-->
-            .line__1,
-            .line__2 {
+            .css-typing p {
+                border-right: .15em solid black;
+                font-family: "Courier";
+                font-size: 14px;
                 white-space: nowrap;
                 overflow: hidden;
-<!--                margin: 0.5rem auto;-->
-<!--                font-family: "Major Mono Display", monospace;-->
-<!--                font-size: 2rem;-->
-<!--                font-weight: bold;-->
             }
-            .line__1 {
-                border-right: 2px solid rgba(17, 17, 17, 0.9);
-                animation:
-                    animated-text__1 6s steps(30, end) 1s 1 normal both,
-                    animated-cursor__1 900ms steps(30, end) 8;
+            .css-typing p:nth-child(1) {
+                width: 7.3em;
+                -webkit-animation: type 2s steps(40, end);
+                animation: type 2s steps(40, end);
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
             }
-            .line__2 {
-                border-right: 2px solid rgba(17, 17, 17, 0.9);
-                animation:
-                    animated-text__2 5s steps(30, end) 1s 1 normal both,
-                    animated-cursor__2 900ms steps(30, end) infinite;
-                -webkit-animation-delay: 3s;
-                animation-delay: 3s;
+            .css-typing p:nth-child(2) {
+                width: 11.5em;
+                opacity: 0;
+                -webkit-animation: type2 2s steps(40, end);
+                animation: type2 2s steps(40, end);
+                -webkit-animation-delay: 2s;
+                animation-delay: 2s;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
             }
-            @keyframes animated-cursor__1 {
-                from {
-                    border-right-color: rgba(17, 17, 17, 0.9);
-                }
-                to {
-                    border-right-color: rgba(255, 255, 255, 0.8);
-                }
+            @keyframes type {
+                0% {width: 0;}
+                99.9% {border-right: .15em solid orange;}
+                100% {border: none;}
             }
-            @keyframes animated-cursor__2 {
-                from {
-                    border-right-color: rgba(17, 17, 17, 0.9);
-                }
-                to {
-                    border-right-color: rgba(255, 255, 255, 0.8);
-                }
+            @-webkit-keyframes type {
+                0% {width: 0;}
+                99.9% {border-right: .15em solid orange;}
+                100% {border: none;}
             }
-            @keyframes animated-text__1 {
-                from {
-                    width: 0;
-                }
-                to {
-                    width: 45rem;
+            @keyframes type2 {
+                0% {width: 0; }
+                1% {opacity: 1;}
+                99.9% {border-right: .15em solid orange;}
+                100% {
+                    opacity: 1;
+                    border: none;
                 }
             }
-            @keyframes animated-text__2 {
-                from {
-                    width: 0;
+            @-webkit-keyframes type2 {
+                0% {width: 0;}
+                1% {opacity: 1;}
+                99.9% {border-right: .15em solid orange; }
+                100% {
+                    opacity: 1;
+                    border: none;
                 }
-                to {
-                    width: 29rem;
-                }
+            }
+            @keyframes blink {
+                50% {border-color: transparent;}
+            }
+            @-webkit-keyframes blink {
+                50% {border-color: tranparent;}
             }
         </style>
     </head>
@@ -105,9 +102,13 @@
 <!--            </div>-->
 <!--        </h1>-->
 
-        <div class="wrapper">
-            <p class="line__1">Hello, </p>
-            <p class="line__2">I'm Valeria Milshtein!</p>
+        <div class="css-typing">
+            <p>
+                Hello,
+            </p>
+            <p>
+                I'm Valeria Milshtein!
+            </p>
         </div>
 
         <h2>I had graduated from Humber College<br>Studied Computer Programmer</h2>
