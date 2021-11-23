@@ -69,7 +69,6 @@
 
             .css-typing h1 {
             width: auto;
-            display: block;
   border-right: .15em solid green;
   font-family: "Courier";
   font-size: 14px;
@@ -195,6 +194,16 @@
   50% {
     border-color: tranparent;
   }
+}
+
+@keyframes typing{
+  from {max-width: 0}
+  to {max-width: 100%}
+}
+
+@keyframes blink-caret{
+  from, to {border-color: transparent}
+  50% {border-color: black}
 }
 
         </style>
