@@ -26,6 +26,17 @@ body {
     margin-left: 0px;
 }
 
+element.style {
+    display: inline;
+    position: relative;
+    font: inherit;
+    color: inherit;
+}
+
+[data-inline-type='imanoistop'] .ti-cursor {
+    animation: blink-imanoistoup 1s infinite;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Lobster';
 }
