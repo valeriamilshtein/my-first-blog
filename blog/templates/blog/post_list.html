@@ -11,14 +11,15 @@
 <!--        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
         <style id="intro">
             .css-typing h1 {
-                border-right: .15em solid black;
+                border-right: .15em solid transparent;
                 white-space: nowrap;
                 overflow: hidden;
             }
             .css-typing h1:nth-child(1) {
                 width: 7.3em;
                 -webkit-animation: type 2s steps(40, end);
-                animation: type 2s steps(40, end);
+<!--                animation: type 2s steps(40, end);-->
+                animation: typing 2s steps(60, end), blink-caret .65s step-end 8;
                 -webkit-animation-fill-mode: forwards;
                 animation-fill-mode: forwards;
             }
