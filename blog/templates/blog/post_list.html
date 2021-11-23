@@ -46,7 +46,7 @@
             }
             .css-typing h1:nth-child(2) {
                 width: 11.5em;
-<!--                opacity: 0;-->
+                opacity: 0;
                 -webkit-animation: type2 2s steps(40, end);
 <!--                animation: type2 2s steps(40, end);-->
                 animation:
@@ -86,10 +86,14 @@
                 }
             }
             @keyframes blink {
-                50% {border-color: transparent;}
+<!--                50% {border-color: transparent;}-->
+                from, to { border-color: transparent }
+                50% { border-color: orange; }
             }
             @-webkit-keyframes blink {
-                50% {border-color: tranparent;}
+<!--                50% {border-color: tranparent;}-->
+                from, to { border-color: transparent }
+                50% { border-color: orange; }
             }
         </style>
     </head>
