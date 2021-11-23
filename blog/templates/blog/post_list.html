@@ -18,8 +18,8 @@
                 border-right: .15em solid black;
                 white-space: nowrap;
                 animation:
-                    typing 2s steps(20, end) forwards,
-                    blinking .75s infinite;
+                    b .7s infinite steps(1),
+                    t calc(var(--n)*.3s) steps(var(--n)) forwards;
                 width: 0;
             }
             @keyframes typing {
