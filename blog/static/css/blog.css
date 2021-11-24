@@ -1,13 +1,17 @@
+html {
+    background: url(images/bgimage1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 h1 a, h2 a {
     color: #356B6A;
     font-family: 'Lobster';
 }
 
 body {
-    background-image: url('blog/templates/blog/images/bgimage1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     background: #EDF5F5;
     font-family: 'Open Sans', sans-serif;
     padding-left: 100px;
