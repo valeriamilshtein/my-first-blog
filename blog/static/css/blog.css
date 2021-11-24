@@ -1,18 +1,10 @@
-.bg {
-    background-image: url("bgimage.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 h1 a, h2 a {
     color: #356B6A;
     font-family: 'Lobster';
 }
 
 body {
-    background-image: url("bgimage.jpg");
+    background: #EDF5F5;
     font-family: 'Open Sans', sans-serif;
     padding-left: 100px;
     margin: 8px;
