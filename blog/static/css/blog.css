@@ -4,7 +4,10 @@ h1 a, h2 a {
 }
 
 body {
-    background: #EDF5F5;
+    background-image: url('background-image1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: 'Open Sans', sans-serif;
     padding-left: 100px;
     margin: 8px;
