@@ -1,7 +1,7 @@
 #background {
     border: 2px solid black;
     padding: 25px;
-    background: url(/home/valeria/django/my-first-blog/blog/templates/blog/images/bgimage1.jpg);
+    background: url(/home/valeria/django/my-first-blog/blog/static/images/bgimage1.jpg);
     background-repeat: no-repeat;
     background-size: auto;
 }
