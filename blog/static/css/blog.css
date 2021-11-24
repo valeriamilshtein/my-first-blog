@@ -1,14 +1,10 @@
-body {
-    background: url("../images/bgimage1.jpg") repeat 0 0;
-}
-
 h1 a, h2 a {
     color: #356B6A;
     font-family: 'Lobster';
 }
 
 body {
-    background: #EDF5F5;
+    background: url("../images/bgimage1.jpg") repeat 0 0;
     font-family: 'Open Sans', sans-serif;
     padding-left: 100px;
     margin: 8px;
