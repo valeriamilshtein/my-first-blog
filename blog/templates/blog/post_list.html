@@ -11,13 +11,10 @@
 <!--        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
         <style id="intro">
 
-            #background {
-                border: 2px solid black;
-                padding: 25px;
-                background: url(/home/valeria/django/my-first-blog/blog/static/images/bgimage1.jpg);
-                background-repeat: no-repeat;
-                background-size: auto;
+            body {
+                background: url("../images/bgimage1.jpg") repeat 0 0;
             }
+
 
             .css-typing h1 {
                 border-right: .15em solid transparent;
@@ -77,33 +74,31 @@
         </style>
     </head>
     <body>
-        <div id="background">
-            <div class="page-header">
-                <h1><a href="/"><center><strong>My Blog</strong></center></a></h1>
-            </div>
-            <div class="css-typing">
-                <h1>
-                    <strong>Hello,</strong>
-                </h1>
-                <h1>
-                    <strong>I'm Valeria Milshtein!</strong>
-                </h1>
-            </div>
-            <h2>I had graduated from Humber College<br>Studied Computer Programmer</h2>
-            <p>I'm currently seeking full-time <strong>Software Development Job</strong>.</p>
-            <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
-                        {% for post in posts %}
-                            <div class="post">
-                                <div class="date">
-                                    {{ post.published_date }}
-                                </div>
-                                <h2><u><a href="">{{ post.title }}</a></u></h2>
-                                <p>{{ post.text|linebreaks }}</p>
+        <div class="page-header">
+            <h1><a href="/"><center><strong>My Blog</strong></center></a></h1>
+        </div>
+        <div class="css-typing">
+            <h1>
+                <strong>Hello,</strong>
+            </h1>
+            <h1>
+                <strong>I'm Valeria Milshtein!</strong>
+            </h1>
+        </div>
+        <h2>I had graduated from Humber College<br>Studied Computer Programmer</h2>
+        <p>I'm currently seeking full-time <strong>Software Development Job</strong>.</p>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% for post in posts %}
+                        <div class="post">
+                            <div class="date">
+                                {{ post.published_date }}
                             </div>
-                        {% endfor %}
-                    </div>
+                            <h2><u><a href="">{{ post.title }}</a></u></h2>
+                            <p>{{ post.text|linebreaks }}</p>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

@@ -1,9 +1,5 @@
-#background {
-    border: 2px solid black;
-    padding: 25px;
-    background: url(/home/valeria/django/my-first-blog/blog/static/images/bgimage1.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
+body {
+    background: url("../images/bgimage1.jpg") repeat 0 0;
 }
 
 h1 a, h2 a {
@@ -12,7 +8,7 @@ h1 a, h2 a {
 }
 
 body {
-    background: url(/home/valeria/django/my-first-blog/blog/static/images/bgimage1.jpg);
+    background: #EDF5F5;
     font-family: 'Open Sans', sans-serif;
     padding-left: 100px;
     margin: 8px;
