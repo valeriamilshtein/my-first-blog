@@ -4,15 +4,10 @@ h1 a, h2 a {
 }
 
 body {
+    background: #EDF5F5;
     font-family: 'Open Sans', sans-serif;
-    border: 2px solid green;
-    padding: 10px;
     padding-left: 100px;
     margin: 8px;
-    background: url("https://image.freepik.com/free-photo/white-crumpled-paper-texture-background_1373-162.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 .page-header {
