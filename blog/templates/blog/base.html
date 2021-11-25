@@ -1,0 +1,92 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <title>Valeria Milshtein Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
+<!--        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
+        <style id="intro">
+            body {
+                border: 2px solid green;
+                padding: 10px;
+                background: url("https://image.freepik.com/free-photo/white-crumpled-paper-texture-background_1373-162.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .css-typing h1 {
+                border-right: .15em solid transparent;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .css-typing h1:nth-child(1) {
+                width: 7.3em;
+                -webkit-animation: type 2s steps(40, end);
+                animation: type 2s steps(40, end);
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+            .css-typing h1:nth-child(2) {
+                width: 11.5em;
+                opacity: 0;
+                -webkit-animation: type2 2s steps(40, end);
+                animation: type2 2s steps(40, end);
+                -webkit-animation-delay: 2s;
+                animation-delay: 2s;
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+            }
+            @keyframes type {
+                0% {width: 0;}
+                99.9% {border-right: .15em solid green;}
+                100% {border: none;}
+            }
+            @-webkit-keyframes type {
+                0% {width: 0;}
+                99.9% {border-right: .15em solid green;}
+                100% {border: none;}
+            }
+            @keyframes type2 {
+                0% {width: 0; }
+                1% {opacity: 1;}
+                99.9% {border-right: .15em solid green;}
+                100% {
+                    opacity: 1;
+                    border: none;
+                }
+            }
+            @-webkit-keyframes type2 {
+                0% {width: 0;}
+                1% {opacity: 1;}
+                99.9% {border-right: .15em solid green; }
+                100% {
+                    opacity: 1;
+                    border: none;
+                }
+            }
+            @keyframes blink {
+                50% {border-color: transparent;}
+            }
+            @-webkit-keyframes blink {
+                50% {border-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/"><center><strong>My Blog</strong></center></a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
