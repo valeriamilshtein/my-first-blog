@@ -46,11 +46,9 @@ def post_edit(request, pk):
 #         post.delete()
 #         return redirect('post_list')
 
-def post_remove(request, slug=None, id=None):
-    if slug:
-        posts = Post.objects.get(slug=slug)
-    if id:
-        posts = Post.objects.get(id=id)
+def post_remove(request, pk):
+    if pk:
+        posts = Post.objects.get(pk=pk)
     if request.method == 'POST':
         posts.delete()
         return redirect('post_list')
