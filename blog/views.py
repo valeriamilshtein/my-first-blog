@@ -44,3 +44,15 @@ def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
     return redirect('post_list')
+
+# def post_remove(request, slug=None, id=None):
+#     if slug:
+#         posts=Post.objects.get(slug=slug)
+#     if id:
+#         posts=Post.objects.get(id=id)
+#     #Now, your urls.py would ensure that this view code is executed only when slug or id is specified
+#
+#     #You might also want to check for permissions, etc.. before deleting it - example who created the Post, and who can delete it.
+#     if request.method == 'POST':
+#         posts.delete()
+#         return redirect("home")
