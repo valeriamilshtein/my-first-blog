@@ -49,7 +49,7 @@ def post_edit(request, pk):
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if pk:
-        posts = Post.objects.get(pk=pk)
+        post = Post.objects.get(pk=pk)
     if request.method == 'POST':
-        posts.delete()
+        post.delete()
         return redirect('post_list')
