@@ -44,7 +44,7 @@ def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     if request.method == 'POST':
         post.delete()
-        return redirect('post_list')
+        return redirect("home")
     # post.delete()
     # return redirect('post_list')
 
