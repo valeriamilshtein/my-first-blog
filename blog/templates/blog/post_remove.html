@@ -4,6 +4,6 @@
     <h1>Delete Post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="delete" class="delete btn btn-default">Delete</button>
+        <button class="btn btn-secondary">Delete</button>
     </form>
 {% endblock %}
