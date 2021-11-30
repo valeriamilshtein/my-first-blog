@@ -40,16 +40,8 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
 
-# def post_remove(request, pk):
-#     post = get_object_or_404(Post, pk=pk)
-#     if request.method == 'POST':
-#         post.delete()
-#         return redirect('post_list')
-
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
-    if pk:
-        post = Post.objects.get(pk=pk)
-    if request.method == 'POST':
+    if request.method == "POST":
         post.delete()
         return redirect('post_list')
